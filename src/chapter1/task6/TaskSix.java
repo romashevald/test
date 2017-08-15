@@ -1,3 +1,5 @@
+package chapter1.task6;
+
 import java.math.BigInteger;
 import java.util.Scanner;
 

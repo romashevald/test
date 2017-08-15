@@ -1,3 +1,5 @@
+package chapter1.task3;
+
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.Scanner;

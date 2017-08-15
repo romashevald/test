@@ -1,4 +1,4 @@
-import com.sun.org.apache.xpath.internal.SourceTree;
+package chapter1.task15;
 
 import java.util.ArrayList;
 /*Напишите программу, сохраняющую треугольник Паскаля вплоть до заданной

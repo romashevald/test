@@ -1,7 +1,11 @@
+package chapter1.task9;
+
 /*В разделе 1.5.3 был приведен пример сравнения двух символьных строк s и t при вызове метода s.equals(t),
  но не с помощью операции s != t.
   Придумайте другой пример, в котором не применяется метод substring ().*/
 public class TaskNine {
+
+
 
 //    int[] arrIntOne = new int[one.length()];
 //            int[] arrIntTwo = new int[two.length()];

@@ -1,4 +1,4 @@
-//<editor-fold desc="Description">
+package chapter1.task2;//<editor-fold desc="Description">
 
 /**
  * Created by TTT on 25.07.2017.
