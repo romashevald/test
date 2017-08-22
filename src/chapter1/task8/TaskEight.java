@@ -2,9 +2,6 @@ package chapter1.task8;
 
 import java.util.ArrayList;
 
-/**
- * Created by TTT on 31.07.2017.
- */
 /*Напишите программу, вводящую символьную строку и выводящую все ее непустые подстроки.*/
 public class TaskEight {
 

@@ -6,7 +6,7 @@ package chapter2.task1;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 
-public class TaskOne {
+public class Cal {
 
 
     public static void main(String[] args) {
