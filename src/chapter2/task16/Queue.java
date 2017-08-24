@@ -10,7 +10,6 @@ public class Queue {
     private Node tail = null;
     private int size = 0;
 
-
     public void add(String str) {
         Node node = new Node();
         node.setContent(str);
@@ -69,9 +68,20 @@ public class Queue {
         }
     }
 
+
     //TODO: написать метод расчета размера очереди без использования size
     public int getSizeCounting() {
-        return 0;
+        Node iterator = head;
+        int count = 0;
+        if (iterator!= null) {
+            count++;
+            while (iterator.getNext() != null) {
+                count++;
+                iterator = iterator.getNext();
+            }
+        } else {
+            return 0;
+        }
+        return count;
     }
-
 }
