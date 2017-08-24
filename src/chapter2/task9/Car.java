@@ -24,9 +24,9 @@ public class Car {
         this.petrolConsumption = fuelConsumption;
     }
 
-    //обработать ситуацию с отрицательным топливом
-    //если petrolConsumption * kilometers получается больше текущего топлива, проехать сколько возможно и выбросить исключение
-    //с сообщением по поводу пустого бака
+    //TODO: обработать ситуацию с отрицательным топливом
+    //TODO: если petrolConsumption * kilometers получается больше текущего топлива, проехать сколько возможно и выбросить исключение
+    //TODO: с сообщением по поводу пустого бака
     public void carMovement(double kilometers) {
         this.kilometers += kilometers;
         this.petrol -= petrolConsumption * kilometers;

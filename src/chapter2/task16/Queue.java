@@ -6,8 +6,47 @@ package chapter2.task16;
 Должен ли этот класс быть статическим?*/
 
 public class Queue {
-    private Node head;
-    private Node tail;
+    private Node head = null;
+    private Node tail = null;
+    private int size = 0;
+
+
+    public void add(String str) {
+        Node node = new Node();
+        node.setContent(str);
+        if (head == null) {
+            head = node;
+        } else {
+            tail.setNext(node);
+        }
+        tail = node;
+        size++;
+    }
+
+    public String remove() {
+        if (size == 0) {
+            return null;
+        }
+        String obj = head.getContent();
+        head = head.getNext();
+        if (head == null) {
+            tail = null;
+        }
+        size--;
+        return obj;
+    }
+
+    public int size() {
+        return size;
+    }
+
+    @Override
+    public String toString() {
+        return "Queue{" +
+                "head=" + head +
+                ", tail=" + tail +
+                '}';
+    }
 
     public static class Node {
         private String content;
@@ -30,7 +69,9 @@ public class Queue {
         }
     }
 
-    public static void main(String[] args) {
-
+    //TODO: написать метод расчета размера очереди без использования size
+    public int getSizeCounting() {
+        return 0;
     }
+
 }
