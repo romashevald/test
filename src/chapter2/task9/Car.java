@@ -28,6 +28,11 @@ public class Car {
     //TODO: если petrolConsumption * kilometers получается больше текущего топлива, проехать сколько возможно и выбросить исключение
     //TODO: с сообщением по поводу пустого бака
     public void carMovement(double kilometers) {
+        if (petrolConsumption * kilometers > petrol)
+        {
+            double remainder = ((petrolConsumption * kilometers) % petrol);
+            System.out.println("осток в баке" + remainder);
+        }
         this.kilometers += kilometers;
         this.petrol -= petrolConsumption * kilometers;
     }

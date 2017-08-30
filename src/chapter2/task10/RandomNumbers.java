@@ -22,18 +22,18 @@ public class RandomNumbers {
             return 0;
         }
         return lst.get(new Random().nextInt(lst.size()));
-//            Random generator = new Random();
-//            int result = 0;
-//            for (int i = 0; i < lst.size(); i++) {
-//                generator.nextInt(i);
-//            }
-//
-//            return result;
-//        }
     }
 
 
-    //сделать с массивом
+    public static void getRandomElementForArr(int[] arr) {
+
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = new Random().nextInt(arr.length);
+            System.out.println("arr: " + arr[i]);
+        }
+
+    }
     //
 
 
@@ -43,6 +43,8 @@ public class RandomNumbers {
         numbers.add(10);
         //  int first = numbers.get(0);
         //    System.out.println(first);
-        System.out.println(getRandomElement(numbers));
+       System.out.println("list:" + getRandomElement(numbers));
+        int[] arr = new int[100];
+        getRandomElementForArr(arr);
     }
 }
