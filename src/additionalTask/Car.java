@@ -12,9 +12,10 @@ public class Car {
 
     public void stop(){}
 
+    int distance = 0;
     public int drive(int howlong){
-        int distance = 0;
-        return distance+=howlong*60;
+        distance+=howlong*60;
+        return distance;
     }
 
 }
